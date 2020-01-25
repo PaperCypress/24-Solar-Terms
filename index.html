@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>二十四節氣</title>
+<meta name="description" content="二十四節氣，紀錄了中國長久以來的氣候特徵，藉由現代的設計以及互動性高的網站帶給大家新的感受。">
+  <meta name="keywords" content="節氣,24,設計,solar,terms,天干地支">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/cal.js"></script>
+
+
+<style type="text/css">
+	@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+	@import url("animation.css");
+    @charset "utf-8";
+	
+	@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+	
+	
+	
+	.fadeinup {
+    animation-name: fadeUp;
+	-webkit-  animation-name: fadeUp;
+	 animation-duration: 1.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+	
+	
+	
+	body {
+	/*	background:url(%E9%A6%96%E9%A0%81%E7%89%88%E9%9D%A2.jpg);
+		background-size:contain;
+		background-position:center;*/
+		width:100%;height:100%;
+
+			cursor:default;
+-webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+overflow: hidden;
+	}
+
+	
+h1{
+	text-align:center;
+	margin-top: 2.75%;
+    margin-left:1%;
+	line-height: 6vh;
+	font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+	font-weight:100;
+	font-size:3.8vh;	
+	display:none;	
+	}
+	
+	
+	a{
+		font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+	font-weight:100;
+	font-size:18px;		
+display:block;
+
+	width:3.5%;
+	height:146px;
+		float: left;
+		position:fixed;
+		text-align: center;
+		bottom: 5%;
+		line-height: 54px;
+		border: solid 1px black;
+        vertical-align:central;
+		 -moz-border-radius: 6px;
+ -webkit-border-radius: 6px;
+ border-radius: 6px;
+		box-sizing: border-box;
+		text-decoration: none;
+		color: black;
+		transition:all 0.3s ease;
+		background-color:rgba(255,255,255,0.5);
+		z-index: 1;
+	}
+	a:after
+	{
+		position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: black;
+   -moz-border-radius: 6px;
+ -webkit-border-radius: 6px;
+ border-radius: 6px;
+  transition: all 0.3s ease;
+		
+		
+	}
+
+	a:hover{
+		
+		color:white;
+		
+	}
+	a:hover:after{
+		 -moz-border-radius: 6px;
+ -webkit-border-radius: 6px;
+ border-radius: 6px;
+		bottom: 0;
+  height: 100%;
+	}
+	a:active{
+		
+
+	}
+	
+	
+	
+div a p {
+	position: relative;
+
+	}
+
+video{
+	position:fixed;
+	top: 50%;
+    left: 50%;
+object-fit: inherit;
+
+    height: 100%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+	
+	}
+</style>
+</head>
+
+<body>
+<video  playsinline autoplay muted loop poster="Landing_Static.png">
+<source  src="Landing_Page.webm" type="video/webm">
+<source  src="Landing_Page.mp4" type="video/mp4">
+</video>
+<h1 class="fadeindown">二<br>十<br>四<br>節<br>氣</h1>
+<div>
+<a style="left: 39.56%;"  class="fadeinup" href="about.html"><p>關<br>於</p></a>
+        <a style="left: 48.8%;" id="homeenter" class="fadeinup"><p>進<br>入</p></a>        
+     <a style="right:38.7%;font-size:15px;line-height: 29px;" class="fadeinup" href="tiangan.html"><p  style="position: relative;top:-3px;">天<br>干<br>地<br>支</p></a></div>
+
+<script>
+document.getElementById("homeenter").href = currentlink;
+
+
+</script>
+     
+
+</body>
+</html>

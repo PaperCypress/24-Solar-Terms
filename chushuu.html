@@ -1,0 +1,137 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>處暑 | 二十四節氣</title>
+<meta name="description" content="二十四節氣，紀錄了中國長久以來的氣候特徵，藉由現代的設計以及互動性高的網站帶給大家新的感受。">
+  <meta name="keywords" content="節氣,24,設計,solar,terms,天干地支">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+
+<script type="text/javascript">var thispage = 15;</script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/cal.js"></script>
+
+<style type="text/css">
+@import url("template.css");
+@import url("animation.css");
+.main{
+
+	}
+body{
+	background-image:url(images/cs.png),url(images/csbg.jpg);
+height:100%;
+	background-size:contain,100% 100%;
+    background-position:center,center;
+
+	background-repeat:no-repeat;}
+
+</style>
+</head>
+
+
+<body>
+<div id="frame" style=""></div>
+<div class="main">
+
+<div class="dateshow fade" style="text-align: center;color:white;">
+<span>今日&nbsp</span><span class="year"></span><span>年</span><span class="month"></span><span >月</span><span class="day"></span><span >日&nbsp </span><span class="tradyear"></span><span>年</span>
+</div>
+
+<h2 id="progress" class="fadeindown" style="text-align: center;color:white;opacity:0.8;"></h2>
+
+<div class="plate" style="display:none;">清明</div>
+
+<div class="fadeindown" id="bottom"><h2 style="text-align:center;color:rgb(255,254,254);">七月初三</h2>
+<div class="fadeindown" style="text-align: center;letter-spacing: 0.5em;text-indent:0.5em;"><span>「處暑十八盆，天氣自然涼。」
+
+</span></div>
+</div>
+</div>
+<div class="sidenav sidenav_hover">
+ <p ID="other">其他節氣</p>
+  <a class="visible" id="upcoming" ></a>
+  <a class="visible"  href="uushuah.html">雨水</a>
+  <a class="hidden" href="jingjeh.html">驚蟄</a>
+  <a class="hidden" href="chuanfen.html">春分</a>
+  <a class="hidden"  href="chingming.html">清明</a>
+  <a class="hidden" href="gooyuu.html">榖雨</a>
+  <a class="hidden" href="liichuan.html">立春</a>
+  <div class="seasons">春</div>
+  <a class="visible" href="tsiaomann.html">小滿</a>
+  <a class="hidden" href="mangjong.html">芒種</a>
+  <a class="hidden" href="tsiajeh.html">夏至</a>
+  <a class="hidden" href="tsiaoshuu.html">小暑</a>
+  <a class="hidden" href="daashuu.html">大暑</a>
+  <a class="hidden" href="liitsia.html">立夏</a>
+  <div class="seasons">夏</div>
+  <a class="visible selected">處暑</a>
+  <a class="hidden" href="bailoo.html">白露</a>
+  <a class="hidden" href="chiofen.html">秋分</a>
+  <a class="hidden" href="hanloo.html">寒露</a>
+  <a class="hidden" href="shuangjiang.html">霜降</a>
+  <a class="hidden" href="liichio.html">立秋</a>
+  <div class="seasons">秋</div>
+  <a class="visible" href="tsiaoshueh.html">小雪</a>
+  <a class="hidden" href="dashueh.html">大雪</a>
+  <a class="hidden" href="dongjeh.html">冬至</a>
+  <a class="hidden" href="tsiaohan.html">小寒</a>
+  <a class="hidden" href="dahan.html">大寒</a>
+  <a class="hidden" href="liidong.html">立冬</a>
+  <div class="seasons">冬</div>
+</div>
+
+<div class="info fadeinright">
+
+<div style="margin-bottom:23px;">
+<div style="float:left;width:26px;height:26px;"><img src="images/customw.svg"></div>
+<div style="display:block;"><h3 style="margin-left:40px;padding-top:0.3vw;">民間習俗</h3>
+<div style="width:9.4vw;height:2px;background:white;margin:0.5vw 0 0vw 40px;border-radius:10%;"></div>
+<p style="margin-left:40px;">(1)鬼門關:農曆七月二十九日鬼門關，所有好兄弟都會回到陰間。<br><br>
+(2)父親節:八月八日是台灣特有節日，取「八八」的諧音，作為父親節。
+
+</p></div></div>
+
+
+<div><div style="float:left;width:26px;height:26px;"><img src="images/climate.svg"></div><h3  style="margin-left:40px;padding-top:0.2vw;">氣候特徵</h3>
+<div style="width:9.4vw;height:2px;background:white;margin:0.5vw 0 0.5vw 40px;"></div>
+<p  style="margin-left:40px;">「處」含有躲藏、終止意思，處暑表示夏天 結束了。天氣轉涼，萬物開始凋零    
+       
+</p></div>
+</div>
+
+
+<div class="footer"><a href="index.html">回首頁</a>
+<a style="margin-left:20px;" href="about.html">關於我們</a>
+</div>
+
+
+
+
+
+<script>
+$(document).ready(function(){
+$('#frame').fadeOut(2000);
+$(".sidenav").css({right:"-425"});
+
+$("[href]").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+$(".sidenav").removeClass('sidenav_hover');
+		$(".sidenav").css({right:"-425px",opacity:"0.6"});
+		
+		$(".sidenav").css({opacity:"0"});
+        $("#frame").fadeIn(500, redirectPage);   
+		   
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+
+});
+
+</script>
+     
+</body>
+</html>

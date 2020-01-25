@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>關於 | 二十四節氣</title>
+<meta name="description" content="二十四節氣，紀錄了中國長久以來的氣候特徵，藉由現代的設計以及互動性高的網站帶給大家新的感受。">
+  <meta name="keywords" content="節氣,24,設計,solar,terms,天干地支">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/cal.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<style type="text/css">
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+	@import url("animation.css");
+	@charset "utf-8";
+	
+		@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+	
+	
+	
+	.fadeinup {
+    animation-name: fadeUp;
+	-webkit-  animation-name: fadeUp;
+	 animation-duration: 1.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+	
+	
+	
+body {
+	  overflow-y: auto;
+	overflow-x: hidden;
+	margin:0;
+	width:100%;
+	height:100vh;
+	/*background-image:url("About-01.png");
+	background-position:center;
+	background-size:auto 100%;
+	background-repeat:no-repeat;
+	border:solid 1px black;*/
+	
+	}
+h2{
+	font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+	text-align:center;
+	font-size:2vh;
+	font-weight:500;
+	letter-spacing:0.3vh;
+	}
+h3{
+	font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+	text-align:center;
+	font-size:1.7vh;
+	font-weight:300;
+	letter-spacing:0px;
+	line-height:3px;
+	}
+p{
+	font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+	text-align:center;
+	color:#878787;
+	font-size:1.58vh;
+	}
+	
+div#wrap{
+	width:32%;
+   
+	margin:0 auto;
+	transition: all 1s;
+	}
+	
+p img{
+	width:14px;
+	height:14px;
+	margin-left:8px;
+	
+	}
+#back{
+	left:-70px;
+	background-color: #878787;
+	transition:all 0.25s ease-out;
+	height:35px;width:120px;
+	}
+#back:hover{
+	left:0px;
+	opacity:1 ;
+    background-color: black;
+	}
+#back:active{
+	opacity:0 !important;
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+#custom::-webkit-scrollbar-track
+{
+	border: 1px solid #878787;
+	background-color: white;
+}
+
+#custom::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #white;
+}
+
+#custom::-webkit-scrollbar-thumb
+{
+	background-color: black;	
+}
+
+
+</style>
+</head>
+
+<body id="custom">
+<a id="back" href="index.html" class="fadeinright" style="position:fixed;top:80px;"><h3 style="line-height:0vh;color:white;float:left;margin-left:10px;">回首頁</h3><img style="display:block;width:35px;height:35px;float:right;margin-right:10px;background-image:url(images/back.svg)" src='data:image/png;base64,R0lGODlhFAAUAIAAAP///wAAACH5BAEAAAAALAAAAAAUABQAAAIRhI+py+0Po5y02ouz3rz7rxUAOw==' ></a>
+<div id="wrap" style="margin-bottom: 70px;" >
+<img class="fade" src='data:image/png;base64,R0lGODlhFAAUAIAAAP///wAAACH5BAEAAAAALAAAAAAUABQAAAIRhI+py+0Po5y02ouz3rz7rxUAOw=='
+style="display:block;width:50px;height:50px;margin-left:auto;margin-right:auto;margin-top:6vh;margin-bottom:3.4vh;background-image:url(images/mark.svg);">
+<div class="fadeinup" style="margin-bottom:5.4vh;">
+<h2>製作理念</h2>
+<p style="text-align:left;">
+&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp 二十四節氣，紀錄了中國長久以來的氣候特徵，與人們的生活息息相關，舉凡農業 漁業 以及合適的飲食都有所影響，且值得深入研究。而探討24節氣的書籍與網頁極多，我們希望能整合一些要點，並以生活化的方式呈現。網站著重現代感設計，期望帶給瀏覽者一種有別於傳統二十四節氣的氛圍。製作出一個互動性高，能夠吸引大家了解二十四節氣的意涵，便是我們的核心目標。
+</p>
+</div>
+
+<div class="fadeinup" style="margin-bottom:5.4vh;animation-delay: 0.3s;">
+<h2>關於我們</h2>
+<p style="text-align:left;">
+&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp 我們是四位來自國立臺灣藝術大學多媒體動畫藝術學系的學生，因為系上的課程需要，開始了製作網站的工作。平時大多接觸動畫方面的創作，這次能夠進行網站的設計與製作是一個很特別的經驗，希望這個網站能帶給大家特別的感受，並且重新認識二十四節氣。
+<br>聯絡我們:kyho3629@gmail.com
+</p>
+</div>
+
+<div class="fadeinup" style="animation-delay: 0.6s;">
+<h2>資料來源</h2>
+<h3 style="margin-top:2.3vh;">【書籍、文章】</h3>
+<p>
+呂理政與黃金田(2006)。臺灣生活圖曆:黃金田民俗畫.現代當令事典。臺北:向陽文化
+倉林忠(2007，7月)。關於天干地支的起源及其本義。
+</p>
+<h3 style="margin-top:2.6vh;">【網站】</h3>
+<p>中國24節氣 <a href="http://ihouse.hkedcity.net/~hm1203/atmosphere/climate-china-24.htm" target="_blank"><img src="images/clip.svg"></a><br>
+漢典黃曆-2016年二十四節氣 <a href="http://hl.zdic.net/msjr/jqlist/2016.html" target="_blank"><img src="images/clip.svg"></a><br>
+二十四節氣 <a href="http://www.mdnkids.com.tw/24seasons/24index.html" target="_blank"><img src="images/clip.svg"></a><br>
+台灣好食 <a href="https://www.facebook.com/goodfood.taiwan/" target="_blank"><img src="images/clip.svg"></a><br>
+中華民國105年國民曆 <a href="http://calendar.moi.gov.tw/105/" target="_blank"><img src='data:image/png;base64,R0lGODlhFAAUAIAAAP///wAAACH5BAEAAAAALAAAAAAUABQAAAIRhI+py+0Po5y02ouz3rz7rxUAOw==' style="width:15px;height:15px;background-image:url(images/clip.svg);"></a><br>
+相片素材 <a href="http://thestocks.im/" target="_blank"><img src="images/clip.svg"></a>
+</p>
+</div>
+
+<img class="fade" src="images/mark.svg" style="display:block;width:50px;height:50px;margin-left:auto;margin-right:auto;margin-top:4vh;margin-bottom:3.4vh;margin-top:4vh;">
+
+</div>
+
+<script>
+$(document).ready(function(){
+
+
+$("#back").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+	
+		$("#wrap").css({opacity:"0"}).animate({ marginLeft: '+=2000px'},300);
+		$("#back").css({opacity:"0",left:"-120px"}); 
+		$("#back").fadeOut(500, redirectPage);   
+		   
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>清明 | 二十四節氣</title>
+<meta name="description" content="二十四節氣，紀錄了中國長久以來的氣候特徵，藉由現代的設計以及互動性高的網站帶給大家新的感受。">
+  <meta name="keywords" content="節氣,24,設計,solar,terms,天干地支">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+
+<script type="text/javascript">var thispage = 6;</script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/cal.js"></script>
+
+<style type="text/css">
+@import url("template.css");
+@import url("animation.css");
+main{
+	
+	}
+
+body{
+	background-image:url(images/mistb.jpg),url(images/cm.png),url(images/cmbg.jpg);
+background-blend-mode: screen,multiply,normal;
+	background-size:contain,contain,100% 100%;
+    background-position:center,center,center;
+height:100%;
+	background-repeat:no-repeat;}
+
+</style>
+</head>
+<body>
+<div id="frame" style=""></div>
+<div class="main">
+
+<div class="dateshow fade" style="text-align: center;color:white;">
+<span>今日&nbsp</span><span class="year"></span><span>年</span><span class="month"></span><span >月</span><span class="day"></span><span >日&nbsp </span><span class="tradyear"></span><span>年</span>
+</div>
+
+<h2 id="progress" class="fadeindown" style="text-align: center;color:#4C4E53;"></h2>
+
+<div class="plate" style="display:none;">清明</div>
+
+<div class="fadeindown" id="bottom"><h2 style="text-align:center;color:rgb(255,254,254);">四月初四</h2>
+<div class="fadeindown" style="text-align: center;letter-spacing: 0.5em;text-indent:0.5em;"><span>「清明曬死柳，三稞麥子打一斗。」
+</span></div>
+</div>
+</div>
+<div class="sidenav sidenav_hover">
+ <p ID="other">其他節氣</p>
+  <a class="visible" id="upcoming" ></a>
+  
+  <a class="visible selected">清明</a>
+  <a class="hidden" href="gooyuu.html">榖雨</a>
+  <a class="hidden" href="liichuan.html">立春</a>
+  <a class="hidden" href="uushuah.html">雨水</a>
+  <a class="hidden" href="jingjeh.html">驚蟄</a>
+  <a class="hidden" href="chuanfen.html">春分</a>
+  <div class="seasons">春</div>
+    <a class="visible" href="tsiaoshuu.html">小暑</a>
+  <a class="hidden" href="daashuu.html">大暑</a>
+  <a class="hidden" href="liitsia.html">立夏</a>
+  <a class="hidden" href="tsiaomann.html">小滿</a>
+  <a class="hidden" href="mangjong.html">芒種</a>
+  <a class="hidden" href="tsiajeh.html">夏至</a>
+  <div class="seasons">夏</div>
+
+ <a class="visible" href="hanloo.html">寒露</a>
+  <a class="hidden" href="shuangjiang.html">霜降</a>
+  <a class="hidden" href="liichio.html">立秋</a>
+  <a class="hidden" href="chushuu.html">處暑</a>
+  <a class="hidden" href="bailoo.html">白露</a>
+    <a class="hidden" href="chiofen.html">秋分</a>
+  <div class="seasons">秋</div>
+
+  <a class="visible" href="tsiaohan.html">小寒</a>
+  <a class="hidden" href="dahan.html">大寒</a>
+  <a class="hidden" href="liidong.html">立冬</a>
+  <a class="hidden" href="tsiaoshueh.html">小雪</a>
+  <a class="hidden" href="dashueh.html">大雪</a>
+    <a class="hidden" href="dongjeh.html">冬至</a>
+  <div class="seasons">冬</div>
+</div>
+
+<div class="info fadeinright">
+
+<div style="margin-bottom:23px;">
+<div style="float:left;width:26px;height:26px;"><img src='data:image/png;base64,R0lGODlhFAAUAIAAAP///wAAACH5BAEAAAAALAAAAAAUABQAAAIRhI+py+0Po5y02ouz3rz7rxUAOw=='
+ style="background-image:url(images/customw.svg);display:block;width:26px;height:26px;"></div>
+<div style="display:block;"><h3 style="margin-left:40px;padding-top:0.3vw;">民間習俗</h3>
+<div style="width:9.4vw;height:2px;background:white;margin:0.5vw 0 0vw 40px;border-radius:10%;"></div>
+<p style="margin-left:40px;">掃墓:台灣掃墓方式分為「掛紙」和「培墓」兩種形式。掛紙是將墓紙壓在墓碑和后土上，墓紙有黃色、白色以及五色紙等種類，在掛紙前必須先整理墓地，掛紙後要燒紙錢並準 備供品祭墳。培墓較為隆重，必須連續三年，通常是新墓或結婚生子時才需要培墓。
+</p></div></div>
+
+
+<img src='data:image/png;base64,R0lGODlhFAAUAIAAAP///wAAACH5BAEAAAAALAAAAAAUABQAAAIRhI+py+0Po5y02ouz3rz7rxUAOw=='
+ style="background-image:url(images/climate.svg);display:block;float:left;width:26px;height:26px;background-size : 26px 26px;"><h3  style="margin-left:40px;padding-top:0.2vw;">氣候特徵</h3>
+<div style="width:9.4vw;height:2px;background:white;margin:0.5vw 0 0.5vw 40px;"></div>
+<p  style="margin-left:40px;">天氣晴朗，草木發新枝枒，農民忙於春耕春種。</p></div>
+</div>
+
+
+<div class="footer"><a href="index.html">回首頁</a>
+<a style="margin-left:20px;" href="about.html">關於我們</a>
+</div>
+
+
+
+
+
+<script>
+$(document).ready(function(){
+$('#frame').fadeOut(2000);
+$(".sidenav").css({right:"-425"});
+
+$("[href]").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+$(".sidenav").removeClass('sidenav_hover');
+		$(".sidenav").css({right:"-425px",opacity:"0.6"});
+		
+		$(".sidenav").css({opacity:"0"});
+        $("#frame").fadeIn(500, redirectPage);   
+		   
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+
+});
+
+</script>
+     
+</body>
+</html>

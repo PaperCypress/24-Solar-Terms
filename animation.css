@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes bgfade{
+	0%{opacity:0;}
+	100%{opacity:1;}
+	
+	
+	}
+
+/*----------------------------*/
+
+
+
+
+  /** An element that fades in and slides up */
+  .fadeindown {
+    animation-name: fadeDown;
+	-webkit-animation-name: fadeDown;
+	 animation-duration: 1.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  /** An element that fades in and slides from the right */
+  .fadeinright {
+    animation-name: fadeRight;
+  -webkit-animation-name: fadeRight;
+   animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+   .fade{
+	   animation-name:bgfade;
+	
+	    -webkit-animation-name: bgfade;
+   animation-duration: 1s;
+    transition-timing-function: ease;
+    animation-fill-mode: both;
+	   }
+	   
+	   

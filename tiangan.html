@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>天干地支 | 二十四節氣</title>
+<meta name="description" content="二十四節氣，紀錄了中國長久以來的氣候特徵，藉由現代的設計以及互動性高的網站帶給大家新的感受。">
+  <meta name="keywords" content="節氣,24,設計,solar,terms,天干地支">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/cal.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<style type="text/css">
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+	@import url("animation.css");
+	@charset "utf-8";
+	
+	
+	@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+	
+	
+	
+	.fadeinup {
+    animation-name: fadeUp;
+	-webkit-  animation-name: fadeUp;
+	 animation-duration: 1.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+	
+body {
+    overflow-y: scroll;
+	overflow-x: hidden;
+	margin:0;
+	width:100%;
+	height:100vh;
+	/*background-image:url("天干地支-01.png");
+	background-position:top;
+	background-size:auto 1600px;
+	background-repeat:no-repeat;
+	border:solid 1px black;*/
+	
+	}
+h2{
+	font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+	text-align:center;
+	font-size:2vh;
+	font-weight:500;
+	letter-spacing:0vh;
+	}
+h3{
+	font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+	text-align:center;
+	font-size:1.7vh;
+	font-weight:300;
+	letter-spacing:0px;
+	line-height:3px;
+	}
+p{
+	font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+	text-align:center;
+	color:#878787;
+	font-size:1.58vh;
+	}
+	
+div#wrap{
+	width:32%;
+ 
+	margin:0 auto;
+		transition: all 1s;
+	}
+	
+p img{
+	width:14px;
+	height:14px;
+	margin-left:8px;
+	
+	}
+	table{
+		border:solid 1px black;
+			padding:0;
+		margin:0 auto;
+		 border-collapse: collapse;
+	}
+	table td
+	{
+		font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;
+		font-weight:400;
+	text-align:center;
+	color:#878787;
+	font-size:1.4vh;
+		line-height: 1.9vh;
+		border:solid 1px black;
+		
+		margin:0;
+	}
+	
+	table#month td{
+		width:50px;
+		padding:8px 3px;
+		
+	}
+	
+	
+	table#year td{
+		padding:6px 0;
+		width:59px;
+		height:30px;
+	}
+	
+#back{
+	left:-70px;
+	opacity:0.6;
+	transition:all 0.25s ease-out;
+	height:35px;width:120px;
+	}
+#back:hover{
+	left:0px;
+	opacity:1;
+
+	}
+#back:active{
+	opacity:0 !important;
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+
+#custom::-webkit-scrollbar-track
+{
+	border: 1px solid #878787;
+	background-color: white;
+}
+
+#custom::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #white;
+}
+
+#custom::-webkit-scrollbar-thumb
+{
+	background-color: black;	
+}
+
+
+</style>
+</head>
+
+<body id="custom">
+<a id="back" href="index.html" class="fadeinright" style="position:fixed;top:80px;background:#878787;"><h3 style="line-height:0vh;color:white;float:left;margin-left:10px;">回首頁</h3><img style="display:block;width:35px;height:35px;float:right;margin-right:10px;" src="images/back.svg"></a>
+
+<div id="wrap" style="margin-bottom: 70px;">
+<img class="fade" src="images/mark.svg" style="display:block;width:50px;height:50px;margin-left:auto;margin-right:auto;margin-top:7.3vh;margin-bottom:3.4vh;">
+
+<div class="fadeinup" style="margin-bottom:5.4vh;">
+<h2>天干地支由來</h2>
+<p style="text-align:left;">
+&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp 干支可解讀為植物的主幹和枝條。古人的生活和植物密不可分，從房屋建造到漁獵工具等都會用到竹木花草，而植物的生長又與季節氣候有關，於是衍生出以干支來計日的方式。中國早期的建築以竹子和木材當作樑柱，樑位於頭頂，必須仰頭才看的到，仰頭讓人聯想到看天空，因此衍伸出天干；柱子深埋土中，故為地支。天干地支的後來也被用在信仰祭祀上。中國使用干支計算時間的歷史，最早可追溯至商朝。
+</p>
+</div>
+
+<div class="fadeinup" style="margin-bottom:7vh;animation-delay: 0.3s;">
+<h2>十天干與十二地支</h2>
+<p>
+十天干: 甲、乙、丙、丁、戊、己、庚、辛、壬、癸<br>
+十二地支: 子、丑、寅、卯、辰、巳、午、未、申、戌、亥
+
+</p>
+</div>
+
+<div  class="fadeinup" style="margin-bottom:7vh;animation-delay: 0.6s;">
+<h2>計時法</h2>
+<img src="images/time.jpg" style="display:block;height:250px;width:250px;margin: 0 auto;">
+<p>
+古人將一天分成十二個時辰，每個時晨有兩個小時，子時從二十三點到一點、<br>丑時從一點到三點、寅時從三點到四點，以此類推。
+</p>
+
+<p></p>
+</div>
+
+<div class="fadeinup" style="margin-bottom:7vh;animation-delay: 0.9s;">
+<h2>計月法</h2>
+<p>
+寅月是農曆一月，卯月是農曆二月，以此類推
+</p>
+<table class="fadeinup" id="month">
+<tr>
+<td>農曆<br>月份</td><td>一月<br>&nbsp;</td><td>二月<br>&nbsp;</td><td>三<br>&nbsp;</td><td>四<br>&nbsp;</td><td>五<br>&nbsp;</td><td>六<br>&nbsp;</td><td>七<br>&nbsp;</td><td>八<br>&nbsp;</td><td>九<br>&nbsp;</td><td>十<br>&nbsp;</td><td>十一<br>&nbsp;</td><td>十二<br>&nbsp;</td>
+</tr>
+<tr style="height:35px;">
+<td>地支</td><td>寅</td><td>卯</td><td>辰</td><td>巳</td><td>午</td><td>未</td><td>申</td><td>酉</td><td>戌</td><td>亥</td><td>子</td><td>丑</td>
+</tr>
+</table>
+</div>
+
+
+<div class="fadeinup" style="animation-delay: 1.2s;">
+<h2>計年法</h2>
+<p>
+以十天干和十二地支互相搭配，形成六十年(一甲子)為一周期的循環，週期裡的第一年為甲子年，第二年為乙丑年，以此推續。十二地支有相對應的十二生肖，分別是:鼠、牛、虎、兔、龍、蛇、馬、羊、猴、雞、狗、豬。子對應鼠、丑對應牛，以此類推。<br>下表為一甲子的年表。
+</p>
+<table id="year">
+<tr>
+<td>甲子</td><td>乙丑</td><td>丙寅</td><td>丁卯</td><td>戊辰</td><td>己巳</td><td>庚午</td><td>辛未</td><td>壬申</td><td>癸酉</td>
+</tr>
+<tr>
+<td>甲戌</td><td>乙亥</td><td>丙子</td><td>丁丑</td><td>戊寅</td><td>己卯</td><td>庚辰</td><td>辛巳</td><td>壬午</td><td>癸未</td>
+</tr>
+<tr>
+<td>甲申</td><td>乙酉</td><td>丙戌</td><td>丁亥</td><td>戊子</td><td>己丑</td><td>庚寅</td><td>辛卯</td><td>壬辰</td><td>癸巳</td>
+</tr>
+<tr>
+<td>甲午</td><td>乙未</td><td>丙申</td><td>丁酉</td><td>戊戌</td><td>己亥</td><td>庚子</td><td>辛丑</td><td>壬寅</td><td>癸卯</td>
+</tr>
+<tr>
+<td>甲辰</td><td>乙巳</td><td>丙午</td><td>丁未</td><td>戊申</td><td>己酉</td><td>庚戌</td><td>辛亥</td><td>壬子</td><td>癸丑</td>
+</tr>
+<tr>
+<td>甲寅</td><td>乙卯</td><td>丙辰</td><td>丁巳</td><td>戊午</td><td>己未</td><td>庚申</td><td>辛酉</td><td>壬戌</td><td>癸亥</td>
+</tr>
+</table>
+</div>
+
+
+<img class="fade" src="images/mark.svg" style="display:block;width:50px;height:50px;margin-left:auto;margin-right:auto;margin-top:5vh;">
+
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+
+
+$("[href]").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+	
+		$("#wrap").css({opacity:"0"}).animate({ marginLeft: '+=2000px'},300);
+		$("#back").css({opacity:"0",left:"-120px"}); 
+		$("#back").fadeOut(500, redirectPage);
+		   
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+
+});
+
+</script>
+</body>
+</html>
